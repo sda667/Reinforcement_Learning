@@ -52,4 +52,7 @@ Heatmaps of state visits and score plots are provided in the figures (`.png` fil
 ---
 
 ## Files
- 
+- `RL/env.py` → Maze environment
+- `RL/qlearning.py` → Q-Learning implementation
+- `RL/value_iteration.py` → Value Iteration implementation
+- `Reinforcement_Learning_report.pdf` → Full report
