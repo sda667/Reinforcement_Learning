@@ -34,13 +34,24 @@ We compare both approaches, analyze the role of exploration, and study the sensi
 ---
 
 ## Results
-- **Value Iteration** converges quickly and is robust to randomness.  
-- **Q-Learning** adapts better to stochastic environments but needs more episodes.  
-- Exploration strategies matter:  
-  - A **decaying $\varepsilon$** improves learning efficiency.  
-  - A well-chosen **$\tau$** balances exploration and exploitation.  
+- **Value Iteration** converges quickly and is robust to randomness.
+  
+![State-value heatmap (Value Iteration)](report_figures/values_heatmap.png)  
+*Heatmap of state values obtained by Value Iteration.*
+- **Q-Learning** adapts better to stochastic environments but needs more episodes.
+<p float="left">
+  <img src="report_figures/qvalues_heatmap_egreedy.png" width="48%" alt="Q-value heatmap with optimal actions (ε-greedy)">
+  <img src="report_figures/qvalues_heatmap_softmax.png" width="48%" alt="Q-value heatmap with optimal actions (Softmax)">
+</p>
+ 
 
-Heatmaps of state visits and score plots are provided in the figures (`.png` files).  
+- Exploration strategies matter:  
+  - A **decaying $\varepsilon$** improves learning efficiency.
+   ![Average score per episode for different values of epsilon](report_figures/eps_mean_return.png)
+
+  - A well-chosen **$\tau$** balances exploration and exploitation.
+   ![Average score per episode for different values of tau](report_figures/tau_mean_return.png)
+
 
 ---
 
@@ -56,3 +67,4 @@ Heatmaps of state visits and score plots are provided in the figures (`.png` fil
 - [RL/qlearning.py](RL/qlearning.py) → Q-Learning implementation
 - [RL/value_iteration.py](RL/value_iteration.py) → Value Iteration implementation
 - [Reinforcement_Learning_report.pdf](Reinforcement_Learning_report.pdf) → Full report
+- [report_figures](report_figures) → figure and graphes from the report 
