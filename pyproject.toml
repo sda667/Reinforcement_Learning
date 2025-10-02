@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "rl4"
+version = "0.1.0"
+description = ""
+authors = ["ali <bahja.bahja.ali@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+seaborn = "^0.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
