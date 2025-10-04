@@ -6,6 +6,9 @@ This project explores **Reinforcement Learning (RL)** through two approaches:
 - **Q-Learning**: a model-free algorithm that learns directly from interactions.  
 
 The environment is a **7×7 maze** where the agent must reach an exit while maximizing rewards.  
+<img width="350" height="350" alt="Screenshot 2025-10-04 at 02 12 37" src="https://github.com/user-attachments/assets/0b81b396-4a77-4044-99ed-cdcf7c49728f" />
+
+
 We compare both approaches, analyze the role of exploration, and study the sensitivity to parameters like:  
 - Discount factor ($\gamma$)  
 - Learning rate ($\alpha$)  
